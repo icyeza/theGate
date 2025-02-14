@@ -157,12 +157,8 @@
           </p>
         </div>
       </section>
-      <section
-        class="flex flex-col md:flex-row gap-8 mx-4 md:mx-0 md:mr-16 mb-56"
-      >
-        <div
-          class="flex flex-col translate-y-8 md:w-[80vw] hover:bg-[#e1e8f2] hover:scale-[1.01]"
-        >
+      <section class="grid grid-cols-1 md:grid-cols-2 gap-8 mx-4 md:mx-0 md:mr-16 mb-56">
+        <div class="grid grid-cols-1 justify-items-center translate-y-8 hover:bg-[#e1e8f2] hover:scale-[1.01]">
           <img
             src="./images/nafsa_800.webp"
             class="w-full"
@@ -173,15 +169,12 @@
               University
             </h2>
             <p class="text-[32px]">
-              University of Notre Dame wins award for excellence in campus
-              internationalization
+              University of Notre Dame wins award for excellence in campus internationalization
             </p>
           </div>
         </div>
-        <div class="flex flex-col justify-evenly">
-          <div
-            class="p-6 flex flex-col gap-2 hover:bg-[#e1e8f2] hover:scale-[1.01] border-b-4 border-white hover:border-[#c1cddd] text-[#0c2340] py-8 px-16"
-          >
+        <div class="grid grid-cols-1 gap-8">
+          <div class="p-6 flex flex-col gap-2 hover:bg-[#e1e8f2] hover:scale-[1.01] border-b-4 border-white hover:border-[#c1cddd] text-[#0c2340] py-8 px-16">
             <h2 class="font-[Libre Franklin] text-[#ae9142] text-sm uppercase">
               Colleges and schools
             </h2>
@@ -189,19 +182,17 @@
               Physicist Laura Fields granted a Presidential Early Career Award
             </p>
           </div>
-          <div
-            class="p-6 flex flex-col hover:bg-[#e1e8f2] border-b-4 border-white hover:border-[#c1cddd] hover:scale-[1.01] gap-2 text-[#0c2340] py-8 px-16"
-          >
+          <div class="p-6 flex flex-col hover:bg-[#e1e8f2] border-b-4 border-white hover:border-[#c1cddd] hover:scale-[1.01] gap-2 text-[#0c2340] py-8 px-16">
             <h2 class="font-[Libre Franklin] text-[#ae9142] text-sm uppercase">
               Global
             </h2>
             <p class="text-[32px]">
-              University of Notre Dame and Pontificia Universidad Católica de
-              Chile dual PhD program welcomes all disciplines
+              University of Notre Dame and Pontificia Universidad Católica de Chile dual PhD program welcomes all disciplines
             </p>
           </div>
         </div>
       </section>
+      
       <section
         class="bg-[url(https://www.nd.edu/images/css/images/pattern-floral.svg)] bg-[#0c2340] flex flex-col gap-11 mt-10 mb-10"
       >
@@ -330,9 +321,7 @@
         </div>
       </section>
       <section class="md:mx-16 mx-4 mb-4">
-        <h4
-          class="font-[Libre Franklin] tracking-widest uppercase text-[#ae9142] mb-2"
-        >
+        <h4 class="font-[Libre Franklin] tracking-widest uppercase text-[#ae9142] mb-2">
           University Stories
         </h4>
         <h2 class="font-[GPC Bold] mb-2 text-5xl text-[#0c2340]">
@@ -342,19 +331,21 @@
           <a
             class="w-max ml-auto block mb-2 font-[Libre Franklin] px-4 py-3"
             href="#"
-            >View all stories
-            <i class="fa-solid text-[#ae9142] text-xs fa-chevron-right"></i
-          ></a>
-        </div>
-        <div class="flex flex-col md:flex-row gap-8">
-          <div
-            class="flex flex-col hover:bg-[#e1e8f2] hover:scale-[1.01] duration-200 scale-100 border-b-4 border-white hover:border-[#c1cddd]"
           >
+            View all stories
+            <i class="fa-solid text-[#ae9142] text-xs fa-chevron-right"></i>
+          </a>
+        </div>
+      
+        <!-- Changed flex to grid -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="grid-item hover:bg-[#e1e8f2] hover:scale-[1.01] duration-200 scale-100 border-b-4 border-white hover:border-[#c1cddd]">
             <img
               src="https://www.nd.edu/stories/images/2025/2025-sampoorna-800.webp"
               alt=""
+              class="w-full"
             />
-            <div class="p-6 flex flex-col gap-2 w-5/6">
+            <div class="p-6 grid gap-2 w-5/6">
               <h2 class="font-[Libre Franklin] text-[#ae9142] uppercase">
                 Global
               </h2>
@@ -366,14 +357,13 @@
               </p>
             </div>
           </div>
-          <div
-            class="hover:bg-[#e1e8f2] hover:scale-[1.01] duration-200 scale-100 border-b-4 border-white hover:border-[#c1cddd]"
-          >
+          <div class="grid-item hover:bg-[#e1e8f2] hover:scale-[1.01] duration-200 scale-100 border-b-4 border-white hover:border-[#c1cddd]">
             <img
               src="https://www.nd.edu/stories/images/2025/2025-habitat-800.jpg"
               alt=""
+              class="w-full"
             />
-            <div class="p-6 flex flex-col gap-2 w-5/6">
+            <div class="p-6 grid gap-2 w-5/6">
               <h2 class="font-[Libre Franklin] text-[#ae9142] uppercase">
                 Community
               </h2>
@@ -382,26 +372,25 @@
               </h3>
             </div>
           </div>
-          <div
-            class="hover:bg-[#e1e8f2] hover:scale-[1.01] duration-200 scale-100 border-b-4 border-white hover:border-[#c1cddd]"
-          >
+          <div class="grid-item hover:bg-[#e1e8f2] hover:scale-[1.01] duration-200 scale-100 border-b-4 border-white hover:border-[#c1cddd]">
             <img
               src="https://www.nd.edu/stories/images/2024/2024-reasons-to-serve-800.webp"
               alt=""
+              class="w-full"
             />
-            <div class="p-6 flex flex-col gap-2">
+            <div class="p-6 grid gap-2">
               <h2 class="font-[Libre Franklin] text-[#ae9142] uppercase">
                 University
               </h2>
               <h3 class="text-[#0c2340] text-2xl">Reasons to serve</h3>
               <p class="text-[#333333] font-[Libre Franklin]">
-                History, West Point, and 9/11 memorial inspire ND ROTC students
-                in New York
+                History, West Point, and 9/11 memorial inspire ND ROTC students in New York
               </p>
             </div>
           </div>
         </div>
       </section>
+      
       <section class="flex flex-col md:flex-row items-center">
         <div class="p-4 md:p-16 md:pr-24 bg-[#0c2340] order-2">
           <div>
@@ -428,10 +417,7 @@
         />
       </section>
       <section class="mx-4 md:mx-16 my-24 p-4">
-        <h4
-          class="font-[Libre Franklin] tracking-widest uppercase text-[#ae9142] mb-2"
-          class="font-[Libre Franklin]"
-        >
+        <h4 class="font-[Libre Franklin] tracking-widest uppercase text-[#ae9142] mb-2">
           University Events
         </h4>
         <h2 class="font-[GPC Bold] mb-2 text-5xl text-[#0c2340]">
@@ -441,98 +427,83 @@
           <a
             class="w-max ml-auto block mb-2 font-[Libre Franklin] px-4 py-3"
             href="#"
-            >View all events
-            <i class="fa-solid text-[#ae9142] text-xs fa-chevron-right"></i
-          ></a>
+          >
+            View all events
+            <i class="fa-solid text-[#ae9142] text-xs fa-chevron-right"></i>
+          </a>
         </div>
+        
         <div class="grid mt-2 grid-cols-1 gap-4 md:grid-cols-2 font-sum">
-          <div class="flex gap-6 items-baseline">
+          <div class="grid grid-cols-[auto,1fr] gap-6 items-center">
             <div class="text-center font-sans">
-              <p
-                class="text-lg text-center font-[#555] m-[0px 0px 8px] uppercase tracking-widest text-lg"
-              >
+              <p class="text-lg text-center font-[#555] m-[0px 0px 8px] uppercase tracking-widest text-lg">
                 Feb
               </p>
               <p class="text-[#0c2340] font-bold text-5xl">28</p>
             </div>
-            <div
-              class="p-6 hover:bg-[#e1e8f2] hover:scale-[1.01] duration-200 scale-100 border-b-4 border-white hover:border-[#c1cddd]"
-            >
+            <div class="p-6 hover:bg-[#e1e8f2] hover:scale-[1.01] duration-200 scale-100 border-b-4 border-white hover:border-[#c1cddd]">
               <h3 class="text-[22px] mb-5 text-[#0c2340]">
                 Ten Years Hence Lecture: "A Brief History of the Future"
               </h3>
-              <p class="flex gap-2 items-center">
-                <i class="text-[#ae9142] fa-regular fa-clock"></i> Fri, Feb 28
-                at 10:40 am
+              <p class="text-[#0c2340] flex gap-2 items-center">
+                <i class="text-[#ae9142] fa-regular fa-clock"></i> Fri, Feb 28 at 10:40 am
               </p>
             </div>
           </div>
-          <div class="flex gap-6 items-baseline">
+          
+          <div class="grid grid-cols-[auto,1fr] gap-6 items-center">
             <div class="text-center font-sans">
-              <p
-                class="text-lg text-center font-[#555] m-[0px 0px 8px] uppercase tracking-widest text-lg"
-              >
+              <p class="text-lg text-center font-[#555] m-[0px 0px 8px] uppercase tracking-widest text-lg">
                 Mar
               </p>
               <p class="text-[#0c2340] font-bold text-5xl">8</p>
             </div>
-            <div
-              class="p-6 hover:bg-[#e1e8f2] hover:scale-[1.01] duration-200 scale-100 border-b-4 border-white hover:border-[#c1cddd]"
-            >
+            <div class="p-6 hover:bg-[#e1e8f2] hover:scale-[1.01] duration-200 scale-100 border-b-4 border-white hover:border-[#c1cddd]">
               <h3 class="text-[22px] mb-5 text-[#0c2340]">
                 Spring Break (no classes in session)
               </h3>
-              <p class="flex gap-2 items-center">
+              <p class="text-[#0c2340] flex gap-2 items-center">
                 <i class="text-[#ae9142] fa-regular fa-clock"></i> Sat, Mar 8
               </p>
             </div>
           </div>
-          <div class="flex gap-6 items-baseline">
+      
+          <div class="grid grid-cols-[auto,1fr] gap-6 items-center">
             <div class="text-center font-sans">
-              <p
-                class="text-lg text-center font-[#555] m-[0px 0px 8px] uppercase tracking-widest text-lg"
-              >
+              <p class="text-lg text-center font-[#555] m-[0px 0px 8px] uppercase tracking-widest text-lg">
                 Mar
               </p>
               <p class="text-[#0c2340] font-bold text-5xl">19</p>
             </div>
-            <div
-              class="p-6 hover:bg-[#e1e8f2] hover:scale-[1.01] duration-200 scale-100 border-b-4 border-white hover:border-[#c1cddd]"
-            >
+            <div class="p-6 hover:bg-[#e1e8f2] hover:scale-[1.01] duration-200 scale-100 border-b-4 border-white hover:border-[#c1cddd]">
               <h3 class="text-[22px] mb-5 text-[#0c2340]">
-                Lecture by Doug Marsh: "Reflections on Building the University
-                of Notre Dame Campus"
+                Lecture by Doug Marsh: "Reflections on Building the University of Notre Dame Campus"
               </h3>
-              <p class="flex gap-2 items-center">
-                <i class="text-[#ae9142] fa-regular fa-clock"></i> Wed, Mar 19
-                at 5:30 pm
+              <p class="text-[#0c2340] flex gap-2 items-center">
+                <i class="text-[#ae9142] fa-regular fa-clock"></i> Wed, Mar 19 at 5:30 pm
               </p>
             </div>
           </div>
-          <div class="flex gap-6 items-baseline">
+      
+          <div class="grid grid-cols-[auto,1fr] gap-6 items-center">
             <div class="text-center font-sans">
-              <p
-                class="text-lg text-center font-[#555] m-[0px 0px 8px] uppercase tracking-widest text-lg"
-              >
+              <p class="text-lg text-center font-[#555] m-[0px 0px 8px] uppercase tracking-widest text-lg">
                 Mar
               </p>
               <p class="text-[#0c2340] font-bold text-5xl">20</p>
             </div>
-            <div
-              class="p-6 hover:bg-[#e1e8f2] hover:scale-[1.01] duration-200 scale-100 border-b-4 border-white hover:border-[#c1cddd]"
-            >
+            <div class="p-6 hover:bg-[#e1e8f2] hover:scale-[1.01] duration-200 scale-100 border-b-4 border-white hover:border-[#c1cddd]">
               <h3 class="text-[22px] mb-5 text-[#0c2340]">
-                The 26th Annual Dialogues on Nonviolence, Religion, and Peace
-                featuring The Honorable Emilce Cuda
+                The 26th Annual Dialogues on Nonviolence, Religion, and Peace featuring The Honorable Emilce Cuda
               </h3>
-              <p class="flex gap-2 items-center">
-                <i class="text-[#ae9142] fa-regular fa-clock"></i>Thu, Mar 20 at
-                11:00 am
+              <p class="text-[#0c2340] flex gap-2 items-center">
+                <i class="text-[#ae9142] fa-regular fa-clock"></i> Thu, Mar 20 at 11:00 am
               </p>
             </div>
           </div>
         </div>
       </section>
+      
     </main>
     <footer class="font-[Libre Franklin]">
       <nav
