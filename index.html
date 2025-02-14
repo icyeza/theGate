@@ -3,7 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="preload"
+      href="https://www.nd.edu/images/fonts/libre-franklin-v2-latin-regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="https://www.nd.edu/images/fonts/gpc-bold.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
@@ -11,220 +24,614 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>University of Notre Dame</title>
+    <style>
+      @font-face {
+        font-family: "Libre Franklin";
+        src: url("https://www.nd.edu/images/fonts/libre-franklin-v2-latin-regular.woff2")
+          format("woff2");
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+      }
+
+      @font-face {
+        font-family: "GPC Bold";
+        src: url("https://www.nd.edu/images/fonts/gpc-bold.woff2")
+          format("woff2");
+        font-weight: bold;
+        font-style: normal;
+        font-display: swap;
+      }
+    </style>
   </head>
   <body>
-    <!-- hero section -->
-    <div class="relative w-full h-screen">
-        <!-- Background Image with Overlay -->
-        <div class="absolute inset-0 bg-[#0c2340] opacity-70"></div>
-        <img src="./images/campus_spring_scenic-1920.webp" alt="Notre Dame" class="w-full h-full object-cover">
-
-        <!-- Navbar -->
-        <div class="absolute top-0 left-0 w-full bg-[#0c2340] p-4">
-            <div class="max-w-7xl mx-auto flex justify-between items-center">
-                <div class="text-white font-bold text-lg flex items-center">
-                    <img src="./images/university-of_notre_dame_logo-freelogovectors.net_-180x113.png" alt="Logo" class="h-8 mr-2"> 
-                    UNIVERSITY OF NOTRE DAME
-                </div>
-                <nav class="hidden md:flex space-x-6 text-white">
-                    <a href="#" class="hover:underline">About</a>
-                    <a href="#" class="hover:underline">Visit</a>
-                    <a href="#" class="hover:underline">Give</a>
-                    <a href="#" class="hover:underline">Alumni</a>
-                    <a href="#" class="hover:underline">Athletics</a>
-                </nav>
-            </div>
-        </div>
-
-        <!-- Navigation Tabs -->
-        <div class="absolute top-20 left-1/2 transform -translate-x-1/2 bg-white shadow-md rounded-md p-4">
-            <nav class="flex space-x-4 text-gray-800">
-                <a href="#" class="hover:text-blue-900">Academics</a>
-                <a href="#" class="hover:text-blue-900">Admissions</a>
-                <a href="#" class="hover:text-blue-900">Research</a>
-                <a href="#" class="hover:text-blue-900">Global</a>
-                <a href="#" class="hover:text-blue-900">Faith & Service</a>
-                <a href="#" class="hover:text-blue-900">Campus Life</a>
-            </nav>
-        </div>
-
-        <!-- Hero Text -->
-        <div class="absolute bottom-16 left-8 text-white max-w-lg">
-            
-        </div>
-    </div>
-
-    <!-- awards section -->
-    <section
-      class="grid grid-cols-1 px-3 md:px-16 gap-4 md:gap-4 font-[sumana] md:grid-cols-3 md:grid-rows-2"
+    <header
+      class="font-[Libre Franklin] bg-[#0c2340] py-4 px-[5vw] border-t-4 border-[#ae9142] relative"
     >
-      <div class="md:col-start-1 md:row-span-2">
-        <img src="./images/globering_2025.jpeg" alt="awards" />
-        <h1 class="text-xs text-[#ae9142]">UNIVERSITY</h1>
-        <a href="#" class="text-[#0c2340] text-3xl">
-          University of Notre Dame wins award for excellence in campus
-          internationalization
-        </a>
-      </div>
-      <div class="md:col-start-2 md:col-span-2">
-        <h2 class="text-xs text-[#ae9142]">COLLEGE AND SCHOOLS</h2>
-        <a href="#" class="text-[#0c2340] text-3xl"
-          >Physicist Laura Fields granted a Presidential Early Career Award</a
-        >
-      </div>
-      <div class="md:col-start-2 md:col-span-2">
-        <h3 class="text-xs text-[#ae9142]">GLOBAL</h3>
-        <a href="#" class="text-[#0c2340] text-3xl">
-          University of Notre Dame and Pontificia Universidad Católica de Chile
-          dual PhD program welcomes all disciplines
-        </a>
-      </div>
-    </section>
-    <!-- the blue section -->
-    <section class="bg-[#0c2340] text-white px-6">
-        <div><img src="./images/pillar-research-800.avif" alt="woman"><p class="text-xs">RESEARCH</p>
-        <P class="text-2xl">The Opportunity of Inquiry</P>
-    <p>For scholars who share a common passion for inquiry because of what it can reveal about our world and ourselves, there is opportunity here.</p>
-<div class="bg-[#0c2340]"></div></div>
-<div><img src="./images/pillar-faith-800.avif" alt="faith"><p class="text-xs">Faith & Service</p>
-<p class="text-2xl">The Demands of Justice</p>
-<p>Notre Dame is animated by a faith that inspires us to seek knowledge because of the powerful tool it can be to improve humankind.
-
-</p></div>
-<div><img src="./images/pillar-global-800.avif" alt="guy with a bag" class="text-xs"><p>Global</p>
-<p class="text-2xl">The Connected World</p>
-<p>Notre Dame seeks to be in the world, and to bring the world to Notre Dame, because inquiry and scholarly exchange are enriched by the pursuit of cultural fluency.
-
-</p></div>
-    </section>
-    <!-- At work -->
-     <section class="px-6">
-        <div><img src="./images/globering_2025.jpeg" alt="old lady"><h6 class="text-[#ae9142]">INTERNATIONAL</h6>
-        <P class="text-[#0c2340]">University of Notre Dame wins award for excellence in campus internationalization</P></div>
-        <div><img src="./images/mc_mcob_banner.jpeg" alt="banner"><h6 class="text-[#ae9142]">LATEST NEWS</h6>
-        <p class="text-[#0c2340]">ND Ethics Week explores business and sustainability</p></div>
-        <div><h6 class="text-[#ae9142]">COMMUNITY NEWS</h6>
-        <p class="text-[#0c2340]">Notre Dame partners with community organizations for Walk the Walk Week service project </p></div>
-        <div><h6 class="text-[#ae9142]">FACULTY AND STAFF</h6>
-        <p class="text-[#0c2340]">Physicist Laura Fields granted a Presidential Early Career Award</p></div>
-     </section>
-
-    <!-- university stories -->
-    <section class="grid md:grid-cols-3 gap-8 md:px-16 px-6">
-        <div><img src="./images/2025-sampoorna-800.webp" alt="kids"><h4 class="text-xs text-[#ae9142]">GLOBAL</h4>
-        <p>Empowering through education</p>
-    <p class="text-[#0c2340] text-xl">A pathway out of poverty for children in India</p></div>
-        <div><img src="./images/2025-habitat-800.jpeg" alt="houses">
-        <h5 class="text-xs text-[#ae9142]">COMMUNITY</h5>
-    <p class="text-[#0c2340] text-xl">Habitat partnership bears fruit for homebuyers South Bend </p></div>
-        <div><img src="./images/2024-reasons-to-serve-800.webp" alt="white guy">
-        <h6 class="text-xs text-[#ae9142]">University</h6>
-    <p class="text-[#0c2340] text-xl">Reasons to serve</p>
-<p class="text-xs">History, West Point, and 9/11 memorial inspire ND ROTC students in New York</p></div>
-    </section>
-    <!-- catholic -->
-    <section class="grid md:grid-cols-2 md:px-16 py-6 px-3">
-        <div class="md:col-start-1 text-white bg-[#0c2340] font-[sumana] text-3xl">“Notre Dame must be the leading global Catholic research university, on par with but distinct from the world's best private universities. This effort to educate students and conduct research at the highest level animated by a distinctive Catholic mission is one of the most exciting and consequential experiments in global higher education.”</div>
-        <div class="md:col-start-2"><img src="./images/dowd-students-400.webp" alt="priest" class=""></div>
-    </section>
-    <!-- events section -->
-    <section
-      class="md:gap-4 grid-cols-1 md:px-16 font-[sumana] grid py-16 md:grid-cols-2 md:grid-rows-2 px-6"
-    >
-      <div class="md:col-start-1 md:row-start-1">
-        <h4 class="text-xs text-[#ae9142]">UNIVERSITY EVENTS</h4>
-        <h5 class="text-[#0c2340] text-3xl font-bold">Notre Dame in Motion</h5>
-        <p class="text-xs text-[#ae9142] absolute">FEB</p>
-        <p class="text-[#0c2340] text-3xl absolute">28</p>
-        <a href="#" class="text-[#0c2340] text-2xl relative mx-9 md:mb-16"
-          >Ten Years Hence Lecture: "A Brief History of the Future"</a
-        >
-      </div>
-      <div class="md:col-start-2 md:row-start-1">
-        <p class="text-[#ae9142] absolute">Mar</p>
-        <p class="text-[#0c2340] text-3xl absolute">8</p>
-        <a href="#" class="text-[#0c2340] text-2xl relative mx-9"
-          >Spring Break (no classes in session)</a
-        >
-      </div>
-      <div class="md:col-start-1 md:row-start-2">
-        <div class="absolute gap-4">
-          <p class="text-[#ae9142]">Mar</p>
-          <p class="text-[#0c2340] text-3xl">19</p>
-        </div>
-        <a href="#" class="text-[#0c2340] text-2xl relative ml-14"
-          >Lecture by Doug Marsh: "Reflections on Building the University of
-          Notre Dame Campus"</a
-        >
-      </div>
-      <div class="md:col-start-2 md:row-start-2">
-        <p class="text-[#ae9142] absolute">Mar</p>
-        <p class="text-[#0c2340] text-3xl absolute">20</p>
-        <a href="#" class="text-[#0c2340] text-2xl relative mx-9"
-          >The 26th Annual Dialogues on Nonviolence, Religion, and Peace
-          featuring The Honorable Emilce Cuda</a
-        >
-      </div>
-    </section>
-    <!-- links section -->
-    <section>
-      <div
-        class="px-6 bg-[#0c2340] text-white md:items-center grid grid-cols-1 gap-4 grid-rows-5 md:grid-rows-1 md:grid-cols-5 text-center md:px-32 py-16"
-      >
-        <a href="#" class="md:col-start-1">Bookstore</a>
-        <a href="#" class="md:col-start-2">Employment</a>
-        <a href="#" class="md:col-start-3">Tour</a>
-        <a href="#" class="md:col-start-4">InsideND</a>
-        <a href="#" class="md:col-start-5">AcademicCalendar</a>
-      </div>
-    </section>
-    <!-- social media -->
-    <section class="grid md:grid-cols-3 py-6 items-center px-3">
-      <div class="md:col-start-1">
+      <nav class="flex justify-between">
         <img
-          src="./images/university-of_notre_dame_logo-freelogovectors.net_-180x113.png"
-          alt="logo"
+          class="w-[200px] h-[47px] m-8 ml-0"
+          src="./images/logo.png"
+          alt=""
         />
-      </div>
-      <div class="md:col-start-2 items-center">
-        <i class="fa-brands fa-facebook"></i>
-        <i class="fa-brands fa-youtube"></i>
-        <i class="fa-brands fa-x-twitter"></i>
-        <i class="fa-brands fa-linkedin-in"></i>
-        <i class="fa-brands fa-instagram"></i>
-      </div>
-      <div class="md:col-start-3 items-center ">
-        <a href="/copyright/"> © 2025</a>
-        <a href="/" class="url fn org">University of Notre Dame</a>
-        <p><span>NOTRE DAME</span> ", "
-            <span>
-        </p>
-        <abbr title="#">IN</abbr>
-        <span>46556</span>
-        <span>USA</span>
-        <p><span>Phone:</span>
-        <span><a href="#">(574)631-5000</a></span></p>
-        <p><a href="#">Contact</a></p>
-      </div>
-    </section>
+        <div class="hidden md:flex items-baseline">
+          <ul
+            class="flex border-r border-[rgba(255,255,255,.3)] h-max text-white font-black mr-1 items-center"
+          >
+            <li><a class="py-1 px-5" href="#">About</a></li>
+            <li><a class="py-1 px-5" href="#">Visit</a></li>
+          </ul>
+          <ul class="flex h-max text-[#eee] items-start">
+            <li>
+              <a class="py-1 px-5 flex items-center gap-1 text-base" href="#"
+                >Give
+                <img
+                  src="./images/external-link-gold.svg"
+                  class="w-6 h-6"
+                  alt=""
+              /></a>
+            </li>
+            <li>
+              <a class="py-1 px-5 flex items-center gap-1 text-base" href="#"
+                >Alumni
+                <img
+                  src="./images/external-link-gold.svg"
+                  class="w-6 h-6"
+                  alt=""
+              /></a>
+            </li>
+            <li>
+              <a class="py-1 px-5 flex items-center gap-1 text-base" href="#"
+                >Athletics
+                <img
+                  src="./images/external-link-gold.svg"
+                  class="w-6 h-6"
+                  alt=""
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <nav class="absolute right-20 -translate-y-1/3 z-20">
+        <ul class="flex [&>*]:py-5 [&>*]:px-5 text-[#555] bg-white">
+          <li class="block md:hidden">
+            <a href="#"> <span>Home</span></a>
+          </li>
+          <li class=""><a href="#">Academics</a></li>
+          <li class=""><a href="#">Admissions</a></li>
+          <li class=""><a href="#">Research</a></li>
+          <li class=""><a href="#">Global</a></li>
+          <li class="">
+            <a href="#">Faith &amp; Service</a>
+          </li>
+          <li class=""><a href="#">Campus Life</a></li>
+          <li class="block md:hidden"><a href="#">About</a></li>
+          <li class="block md:hidden"><a href="#">Visit</a></li>
+          <li style="padding: 1.25rem" class="border-l border-[#d2d2d2]">
+            <button type="button" class="" aria-label="Toggle search">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="font-[sumana] overflow-hidden">
+      <section class="relative h-[100vh] md:h-[120vh]">
+        <img
+          class="w-full h-full object-cover z-10 grayscale"
+          src="./images/campus_spring_scenic-1920.webp"
+          alt=""
+        />
 
-<section>
-    <div class="bg-[#d2d2d2] justify-between">
-    <div class="flex text-[#555] justif ">
-        <p><a href="#">Search</a></p>
-        <p><a href="#">Mobile App</a></p>
-        <p><a href="#">News</a></p>
-        <p><a href="#">Events</a></p>
-        <p><a href="#">Visit</a></p>
-    </div>
-    <div class="flex text-[#555] justify-between">
-        <p><a href="#">Accessibility</a></p>
-        <p><a href="#">Emergency</a></p>
-        <p><a href="#">closed positioning</a></p>
-        <p><a href="#">Notice of Non-Discrimination</a></p>
-    </div>
-</div>
-</section>
+        <div
+          class="absolute inset-0 bg-gradient-to-b from-[#143865dd] to-[#081629dd]"
+        ></div>
+        <div
+          class="absolute top-14 flex flex-col gap-6 text-white mx-8 md:mr-16 mt-14 md:mt-4 font-[Libre Franklin] text-5xl"
+        >
+          <img
+            src="./images/logo-wwyff-w.svg"
+            class="w-1/2 md:w-1/5 self-center md:self-end"
+            alt=""
+          />
+          <p
+            class="text-lg md:text-2xl text-center md:text-right md:w-1/3 self-center md:self-end"
+          >
+            Notre Dame attracts people willing to take action to find solutions
+            to humanity's most pressing challenges. "What would you fight for?"
+            For us, it's not a question. It's a call to action. We are the
+            Fighting Irish.
+          </p>
+          <p
+            class="text-lg px-7 py-4 bg-white w-max self-center md:self-end text-[#0c2340] rounded-lg"
+          >
+            <a href="#" class="flex items-center"
+              >What would you fight for?
+              <img
+                src="./images/link icon.svg"
+                class="w-6 h-6"
+                alt=""
+            /></a>
+          </p>
+        </div>
+      </section>
+      <section
+        class="flex flex-col md:flex-row gap-8 mx-4 md:mx-0 md:mr-16 mb-56"
+      >
+        <div
+          class="flex flex-col translate-y-8 md:w-[80vw] hover:bg-[#e1e8f2] hover:scale-[1.01]"
+        >
+          <img
+            src="./images/nafsa_800.webp"
+            class="w-full"
+            alt=""
+          />
+          <div class="p-6 flex flex-col gap-2 text-[#0c2340] py-8 px-16">
+            <h2 class="font-[Libre Franklin] text-[#555] text-sm uppercase">
+              University
+            </h2>
+            <p class="text-[32px]">
+              University of Notre Dame wins award for excellence in campus
+              internationalization
+            </p>
+          </div>
+        </div>
+        <div class="flex flex-col justify-evenly">
+          <div
+            class="p-6 flex flex-col gap-2 hover:bg-[#e1e8f2] hover:scale-[1.01] border-b-4 border-white hover:border-[#c1cddd] text-[#0c2340] py-8 px-16"
+          >
+            <h2 class="font-[Libre Franklin] text-[#555] text-sm uppercase">
+              Colleges and schools
+            </h2>
+            <p class="text-[32px]">
+              Physicist Laura Fields granted a Presidential Early Career Award
+            </p>
+          </div>
+          <div
+            class="p-6 flex flex-col hover:bg-[#e1e8f2] border-b-4 border-white hover:border-[#c1cddd] hover:scale-[1.01] gap-2 text-[#0c2340] py-8 px-16"
+          >
+            <h2 class="font-[Libre Franklin] text-[#555] text-sm uppercase">
+              Global
+            </h2>
+            <p class="text-[32px]">
+              University of Notre Dame and Pontificia Universidad Católica de
+              Chile dual PhD program welcomes all disciplines
+            </p>
+          </div>
+        </div>
+      </section>
+      <section
+        class="bg-[url(https://www.nd.edu/images/css/images/pattern-floral.svg)] bg-[#0c2340] flex flex-col gap-11 mt-10 mb-10"
+      >
+        <div class="flex flex-col md:flex-row">
+          <img
+            src="./images/pillar-research-800.avif"
+            class="md:w-[657px] md:h-[390px] h-1/2 md:-translate-y-8"
+            alt=""
+          />
+          <div class="p-6 flex flex-col gap-2 md:w-5/6 text-white py-8 px-16">
+            <h2 class="font-[Libre Franklin] text-[#d2d2d2] uppercase">
+              Research
+            </h2>
+            <h3 class="font-[GPC Bold] text-5xl">The Opportunity of Inquiry</h3>
+            <p class="font-[Libre Franklin] mt-7">
+              For scholars who share a common passion for inquiry because of
+              what it can reveal about our world and ourselves, there is
+              opportunity here.
+            </p>
+            <button
+              class="px-4 py-3 font-[Libre Franklin] text-lg self-end cursor-pointer mt-4 flex items-center gap-2"
+            >
+              Research at ND
+              <i class="fa-solid text-[#ae9142] text-xs fa-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+        <div class="flex flex-col md:flex-row">
+          <div class="p-6 flex flex-col gap-2 md:w-5/6 text-white py-8 px-16">
+            <h2 class="font-[Libre Franklin] text-[#d2d2d2] uppercase">
+              Faith & Service
+            </h2>
+            <h3 class="font-[GPC Bold] text-5xl">The Demands of Justice</h3>
+            <p class="font-[Libre Franklin] mt-7">
+              Notre Dame is animated by a faith that inspires us to seek
+              knowledge because of the powerful tool it can be to improve
+              humankind.
+            </p>
+            <button
+              class="px-4 py-3 font-[Libre Franklin] text-lg mt-4 self-end cursor-pointer"
+            >
+              Faith & Service at ND
+              <i class="fa-solid text-[#ae9142] text-xs fa-chevron-right"></i>
+            </button>
+          </div>
+          <img
+            src="./images/pillar-faith-800.avif"
+            class="md:w-[657px] md:h-[390px] h-1/2 md:-translate-y-8"
+            alt=""
+          />
+        </div>
+        <div class="flex flex-col md:flex-row translate-y-8">
+          <img
+            src="./images/pillar-global-800.avif"
+            class="md:w-[657px] md:h-[390px] h-1/2"
+            alt=""
+          />
+          <div class="p-6 flex flex-col gap-2 w-5/6 text-white py-8 px-16">
+            <h2 class="font-[Libre Franklin] text-[#d2d2d2] uppercase">
+              Global
+            </h2>
+            <h3 class="font-[GPC Bold] text-5xl">The Connected World</h3>
+            <p class="font-[Libre Franklin] mt-7">
+              Notre Dame seeks to be in the world, and to bring the world to
+              Notre Dame, because inquiry and scholarly exchange are enriched by
+              the pursuit of cultural fluency.
+            </p>
+            <button
+              class="px-4 py-3 font-[Libre Franklin] text-lg self-end cursor-pointer mt-4 flex items-center gap-2"
+            >
+              Global Scholarship at ND
+              <i class="fa-solid text-[#ae9142] text-xs fa-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="md:mx-16 mx-4 mb-4">
+        <h4
+          class="font-[Libre Franklin] tracking-widest uppercase text-[#555] mb-2"
+        >
+          University News
+        </h4>
+        <h2 class="font-[GPC Bold] mb-2 text-5xl text-[#0c2340]">
+          Notre Dame At Work
+        </h2>
+        <div class="w-full">
+          <a
+            class="w-max ml-auto block mb-2 font-[Libre Franklin] px-4 py-3"
+            href="#"
+            >View all stories
+            <i class="fa-solid text-[#ae9142] text-xs fa-chevron-right"></i
+          ></a>
+        </div>
+        <div class="flex flex-col">
+          <div class="flex flex-col md:flex-row mt-8">
+            <img
+              src="./images/42815_dome_feature.jpg"
+              class="w-[690px] h-[390px]"
+              alt=""
+            />
+            <div
+              class="p-6 flex flex-col gap-2 text-[#0c2340] bg-blue-50 -translate-y-8 py-8 px-16"
+            >
+              <h2 class="font-[Libre Franklin] text-[#555] text-sm uppercase">
+                University
+              </h2>
+              <p class="text-[32px]">
+                University of Notre Dame wins award for excellence in campus
+                internationalization
+              </p>
+            </div>
+          </div>
+          <div>
+            <div
+              class="p-6 flex flex-col hover:bg-[#e1e8f2] hover:scale-[1.01] duration-200 scale-100 border-b-4 border-white hover:border-[#c1cddd] gap-2 text-[#0c2340] w-1/3 py-8 px-16"
+            >
+              <h2 class="font-[Libre Franklin] text-[#555] text-sm uppercase">
+                University
+              </h2>
+              <p class="text-[22px]">
+                ND Ethics Week explores business and sustainability
+              </p>
+            </div>
+            <div></div>
+          </div>
+        </div>
+      </section>
+      <section class="md:mx-16 mx-4 mb-4">
+        <h4
+          class="font-[Libre Franklin] tracking-widest uppercase text-[#555] mb-2"
+        >
+          University Stories
+        </h4>
+        <h2 class="font-[GPC Bold] mb-2 text-5xl text-[#0c2340]">
+          Notre Dame In Focus
+        </h2>
+        <div class="w-full">
+          <a
+            class="w-max ml-auto block mb-2 font-[Libre Franklin] px-4 py-3"
+            href="#"
+            >View all stories
+            <i class="fa-solid text-[#ae9142] text-xs fa-chevron-right"></i
+          ></a>
+        </div>
+        <div class="flex flex-col md:flex-row gap-8">
+          <div
+            class="flex flex-col hover:bg-[#e1e8f2] hover:scale-[1.01] duration-200 scale-100 border-b-4 border-white hover:border-[#c1cddd]"
+          >
+            <img
+              src="https://www.nd.edu/stories/images/2025/2025-sampoorna-800.webp"
+              alt=""
+            />
+            <div class="p-6 flex flex-col gap-2 w-5/6">
+              <h2 class="font-[Libre Franklin] text-[#555555] uppercase">
+                Global
+              </h2>
+              <h3 class="text-[#0c2340] text-2xl">
+                Empowering through education
+              </h3>
+              <p class="text-[#333333] font-[Libre Franklin]">
+                A pathway out of poverty for children in India
+              </p>
+            </div>
+          </div>
+          <div
+            class="hover:bg-[#e1e8f2] hover:scale-[1.01] duration-200 scale-100 border-b-4 border-white hover:border-[#c1cddd]"
+          >
+            <img
+              src="https://www.nd.edu/stories/images/2025/2025-habitat-800.jpg"
+              alt=""
+            />
+            <div class="p-6 flex flex-col gap-2 w-5/6">
+              <h2 class="font-[Libre Franklin] text-[#555555] uppercase">
+                Community
+              </h2>
+              <h3 class="text-[#0c2340] text-2xl">
+                Habitat partnership bears fruit for homebuyers in South Bend
+              </h3>
+            </div>
+          </div>
+          <div
+            class="hover:bg-[#e1e8f2] hover:scale-[1.01] duration-200 scale-100 border-b-4 border-white hover:border-[#c1cddd]"
+          >
+            <img
+              src="https://www.nd.edu/stories/images/2024/2024-reasons-to-serve-800.webp"
+              alt=""
+            />
+            <div class="p-6 flex flex-col gap-2">
+              <h2 class="font-[Libre Franklin] text-[#555555] uppercase">
+                University
+              </h2>
+              <h3 class="text-[#0c2340] text-2xl">Reasons to serve</h3>
+              <p class="text-[#333333] font-[Libre Franklin]">
+                History, West Point, and 9/11 memorial inspire ND ROTC students
+                in New York
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="flex flex-col md:flex-row items-center">
+        <div class="p-4 md:p-16 md:pr-24 bg-[#0c2340] order-2">
+          <div>
+            <p
+              class="text-2xl md:text-[28px] md:leading-relaxed font-light text-white"
+            >
+              “Notre Dame must be the leading global Catholic research
+              university, on par with but distinct from the world's best private
+              universities. This effort to educate students and conduct research
+              at the highest level animated by a distinctive Catholic mission is
+              one of the most exciting and consequential experiments in global
+              higher education.”
+            </p>
+            <span
+              class="font-[Libre Franklin] text-base font-light text-right text-[#c1cddd] w-full block not-italic mt-6"
+              >— Notre Dame 2033: A Strategic Framework</span
+            >
+          </div>
+        </div>
+        <img
+          class="w-[100vw] md:w-[44vw] object-cover order-1"
+          src="./images/dowd-students-1200.jpg"
+          alt=""
+        />
+      </section>
+      <section class="mx-4 md:mx-16 my-24 p-4">
+        <h4
+          class="font-[Libre Franklin] tracking-widest uppercase text-[#555] mb-2"
+          class="font-[Libre Franklin]"
+        >
+          University Events
+        </h4>
+        <h2 class="font-[GPC Bold] mb-2 text-5xl text-[#0c2340]">
+          Notre Dame In Motion
+        </h2>
+        <div class="w-full">
+          <a
+            class="w-max ml-auto block mb-2 font-[Libre Franklin] px-4 py-3"
+            href="#"
+            >View all events
+            <i class="fa-solid text-[#ae9142] text-xs fa-chevron-right"></i
+          ></a>
+        </div>
+        <div class="grid mt-2 grid-cols-1 gap-4 md:grid-cols-2 font-sum">
+          <div class="flex gap-6 items-baseline">
+            <div class="text-center font-sans">
+              <p
+                class="text-lg text-center font-[#555] m-[0px 0px 8px] uppercase tracking-widest text-lg"
+              >
+                Feb
+              </p>
+              <p class="text-[#0c2340] font-bold text-5xl">28</p>
+            </div>
+            <div
+              class="p-6 hover:bg-[#e1e8f2] hover:scale-[1.01] duration-200 scale-100 border-b-4 border-white hover:border-[#c1cddd]"
+            >
+              <h3 class="text-[22px] mb-5 text-[#0c2340]">
+                Ten Years Hence Lecture: "A Brief History of the Future"
+              </h3>
+              <p class="flex gap-2 items-center">
+                <i class="text-[#ae9142] fa-regular fa-clock"></i> Fri, Feb 28
+                at 10:40 am
+              </p>
+            </div>
+          </div>
+          <div class="flex gap-6 items-baseline">
+            <div class="text-center font-sans">
+              <p
+                class="text-lg text-center font-[#555] m-[0px 0px 8px] uppercase tracking-widest text-lg"
+              >
+                Mar
+              </p>
+              <p class="text-[#0c2340] font-bold text-5xl">8</p>
+            </div>
+            <div
+              class="p-6 hover:bg-[#e1e8f2] hover:scale-[1.01] duration-200 scale-100 border-b-4 border-white hover:border-[#c1cddd]"
+            >
+              <h3 class="text-[22px] mb-5 text-[#0c2340]">
+                Spring Break (no classes in session)
+              </h3>
+              <p class="flex gap-2 items-center">
+                <i class="text-[#ae9142] fa-regular fa-clock"></i> Sat, Mar 8
+              </p>
+            </div>
+          </div>
+          <div class="flex gap-6 items-baseline">
+            <div class="text-center font-sans">
+              <p
+                class="text-lg text-center font-[#555] m-[0px 0px 8px] uppercase tracking-widest text-lg"
+              >
+                Mar
+              </p>
+              <p class="text-[#0c2340] font-bold text-5xl">19</p>
+            </div>
+            <div
+              class="p-6 hover:bg-[#e1e8f2] hover:scale-[1.01] duration-200 scale-100 border-b-4 border-white hover:border-[#c1cddd]"
+            >
+              <h3 class="text-[22px] mb-5 text-[#0c2340]">
+                Lecture by Doug Marsh: "Reflections on Building the University
+                of Notre Dame Campus"
+              </h3>
+              <p class="flex gap-2 items-center">
+                <i class="text-[#ae9142] fa-regular fa-clock"></i> Wed, Mar 19
+                at 5:30 pm
+              </p>
+            </div>
+          </div>
+          <div class="flex gap-6 items-baseline">
+            <div class="text-center font-sans">
+              <p
+                class="text-lg text-center font-[#555] m-[0px 0px 8px] uppercase tracking-widest text-lg"
+              >
+                Mar
+              </p>
+              <p class="text-[#0c2340] font-bold text-5xl">20</p>
+            </div>
+            <div
+              class="p-6 hover:bg-[#e1e8f2] hover:scale-[1.01] duration-200 scale-100 border-b-4 border-white hover:border-[#c1cddd]"
+            >
+              <h3 class="text-[22px] mb-5 text-[#0c2340]">
+                The 26th Annual Dialogues on Nonviolence, Religion, and Peace
+                featuring The Honorable Emilce Cuda
+              </h3>
+              <p class="flex gap-2 items-center">
+                <i class="text-[#ae9142] fa-regular fa-clock"></i>Thu, Mar 20 at
+                11:00 am
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="font-[Libre Franklin]">
+      <nav
+        class="bg-[#0C2340] flex flex-col items-center md:flex-row py-8 px-[5vw]"
+      >
+        <h2 class="text-5xl text-[#0C2340]">Quick Links</h2>
+        <ul
+          class="flex flex-col md:flex-row items-center text-white [&>*]:px-4 [&>*]:py-2"
+        >
+          <li><a href="#">Bookstore</a></li>
+          <li><a href="#">Employment</a></li>
+          <li><a href="#">Tour</a></li>
+          <li><a href="#">InsideND</a></li>
+          <li>
+            <a href="#">Academic Calendar</a>
+          </li>
+        </ul>
+      </nav>
+
+      <nav
+        class="flex flex-col gap-8 items-center md:items-start md:flex-row px-[5vw] justify-between py-8 text-[#555]"
+      >
+        <img
+          class="w-[200px] h-[47px] object-cover"
+          src="https://cdn.freelogovectors.net/wp-content/uploads/2023/06/university-of_notre_dame_logo-freelogovectors.net_-180x113.png"
+          alt=""
+        />
+        <ul
+          class="grid grid-cols-1 h-max md:grid-cols-3 [&>*]:px-4 [&>*]:py-2 [&>*]:text-center text-lg -mt-2"
+        >
+          <li>
+            <a href="https://www.facebook.com/notredame/"
+              ><i class="fa-brands fa-facebook"></i>&nbsp; Facebook</a
+            >
+          </li>
+          <li>
+            <a href="https://twitter.com/NotreDame/"
+              ><i class="fa-brands fa-x-twitter"></i>&nbsp; X/Twitter</a
+            >
+          </li>
+          <li>
+            <a href="https://www.instagram.com/notredame/"
+              ><i class="fa-brands fa-instagram"></i>&nbsp; Instagram</a
+            >
+          </li>
+          <li>
+            <a href="https://www.youtube.com/user/NDdotEDU"
+              ><i class="fa-brands fa-youtube"></i>&nbsp; YouTube</a
+            >
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/school/university-of-notre-dame/"
+              ><i class="fa-brands fa-linkedin"></i>&nbsp; LinkedIn</a
+            >
+          </li>
+        </ul>
+        <div class="text-sm leading-6 max-md:text-center">
+          <a class="font-bold" href="/"
+            ><span class="underline">&copy; 2025</span>
+            <span class="underline">University of Notre Dame</span>
+          </a>
+          <p>
+            Notre Dame,
+            <span class="underline decoration-dotted">IN</span> 46556 USA
+          </p>
+          <p>
+            Phone: <span class="underline">(574)</span>
+            <span class="underline">631-5000</span>
+          </p>
+          <a class="underline" href="/about/contact/">Contact</a>
+        </div>
+      </nav>
+
+      <nav
+        class="bg-[#d2d2d2] text-[#555] items-center py-4 flex flex-col md:flex-row justify-between px-[5vw] text-sm"
+      >
+        <ul
+          class="flex flex-col md:flex-row text-center [&>*]:px-4 [&>*]:py-1 gap-2"
+        >
+          <li><a href="#">Search</a></li>
+          <li><a href="#">Mobile App</a></li>
+          <li><a href="#">News</a></li>
+          <li><a href="#">Events</a></li>
+          <li><a href="#">Visit</a></li>
+        </ul>
+        <ul
+          class="flex flex-col text-center md:flex-row [&>*]:px-4 [&>*]:py-1 gap-2 flex-wrap place-content-end"
+        >
+          <li><a href="#">Accessibility</a></li>
+          <li><a href="#">Emergency</a></li>
+          <li><a href="#">Closed Captioning</a></li>
+          <li>
+            <a
+              href="#"
+              >Notice of Non-Discrimination</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </footer>
   </body>
 </html>
